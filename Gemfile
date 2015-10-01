@@ -10,11 +10,10 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'sqlite3'
 
-# group :development, :test do
-# 	gem 'sqlite3'
-# end
+group :development, :test do
+	gem 'sqlite3'
+end
 
 group :production do
 	gem 'pg', '~>0.18.3'
