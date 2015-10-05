@@ -15,7 +15,7 @@ development:
   encoding: unicode
   database: my_development
   username: davideye
-  password: balls
+  password: eyelab
   host: localhost
   port: 5432
 
@@ -26,10 +26,10 @@ test:
   <<: *default
   database: my_test
   username: davideye
-  password: balls
+  password: eyelab
 
 production:
   <<: *default
   database: my_production
   username: davideye
-  password: balls
+  password: eyelab
