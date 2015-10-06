@@ -1,10 +1,14 @@
 <div class ="jumbotron center">
 	<h1>Eyeball</h1>
 
-	<%= link_to "Log in", signup_path, class: "btn btn-default" %>
-	<%= link_to "Sign Up", signup_path, class: "btn btn-primary" %>
+	<% if user_signed_in? %>
+		#dosomething
+	<% else %>
 
-
+	<p>
+		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %>
+	</p>
+	<% end%>
 </div>
 <!--THIS IS HTML <a href="#">Here!</a> -->
 
