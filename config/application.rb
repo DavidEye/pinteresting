@@ -24,7 +24,7 @@ module Pinteresting
     config.active_record.raise_in_transactional_callbacks = true
     # Required for Heroku
     config.assets.initialize_on_precompile = false
-    config.serve_static_assets = true
+    # config.serve_static_assets = true
 
   end
 end
